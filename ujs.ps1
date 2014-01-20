@@ -1,0 +1,1 @@
+uglifyjs -o js/script.js js/script.u.js 
