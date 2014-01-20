@@ -11,9 +11,15 @@ A set of files I usually use, everytime I start a project.
 - Edit style.scss
 - Link style.css
 
-Point to the /css folder and run the following SASS command (just once)
+#### Running SASS
+- Point to the /css folder and run the following SASS command (just once)
 ```
 sass --watch style.scss:style.css --style compressed
+```
+
+- or in WindowsPowerShell, run
+```
+.\sass
 ```
 
 goto `// Declare Variables` in style.scss for default variables 
@@ -26,12 +32,17 @@ myth style.css style.css
 ### JS (Uglify based)
 - Edit script.u.js
 - Link script.js
+#### Running Uglify.js
 
-From the project folder, run (after every update)
-
+- From the project folder, run (after every update)
 ```
 uglifyjs -o js/script.js js/script.u.js
 ```
+- or in WindowsPowerShell, run
+```
+.\ujs
+```
+
 
 ### Default Font
 - Open Sans
