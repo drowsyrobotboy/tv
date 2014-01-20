@@ -8,7 +8,8 @@
     <link href="fonts/sans.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-
+    <!--Top Nav Bar-->
+    <div class="top">Header comes here</div>
     <!--Scripts-->
     <script src="js/script.js" type="application/javascript"></script>
 </body>
