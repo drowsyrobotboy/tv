@@ -13,6 +13,6 @@
     <!--User Scripts-->
     <script src="js/script.js" type="application/javascript"></script>
     <!--Resources Scripts-->
-    <script src="js/res.js" type="application/javascript"></script>
+    <script src="js/lib.js" type="application/javascript"></script>
 </body>
 </html>
