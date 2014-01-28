@@ -6,6 +6,7 @@ A set of files I usually use, everytime I start a project.
 - Normalize v2.1.3
 - Bourbon (SASS dependant) v3.1.8
 - jQuery v1.10.2
+- AngularJS 1.2.10 with Route and Animate Modules
 
 ### CSS (SASS based)
 - Edit style.scss

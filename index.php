@@ -10,7 +10,9 @@
 <body>
     <!--Top Nav Bar-->
     <div class="top">Header comes here</div>
-    <!--Scripts-->
+    <!--User Scripts-->
     <script src="js/script.js" type="application/javascript"></script>
+    <!--Resources Scripts-->
+    <script src="js/res.js" type="application/javascript"></script>
 </body>
 </html>
