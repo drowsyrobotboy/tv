@@ -1,4 +1,4 @@
-## Mark Three - Template
+![Mark Three - Template](images/logo.svg)
 ---
 A set of files I usually use, everytime I start a project.
 
