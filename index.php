@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app>
 <head>
     <title>Mark Three Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
