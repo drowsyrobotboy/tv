@@ -415,8 +415,8 @@ table {
 
 // Declare Variables
 
-$bgcolor: #f5f5f5;
-$color: #555;
+$bgcolor: #333;
+$color: #eee;
 $regular: 'OpenSansRegular', sans-serif;
 $italic: 'OpenSansItalic', sans-serif;
 $light: 'OpenSansLight', sans-serif;
@@ -433,20 +433,19 @@ $eitalic: 'OpenSansExtraboldItalic', sans-serif;
 body
 {
     font-family: $regular;
-    background: $bgcolor url(../images/bg.png);
+    background: $bgcolor url(../images/bg.gif);
     color: $color;
 }
 
 .top
 {
     font-family: $light;
-    background: #34ABC9;
+    background: #222;
     position:fixed;
     top:0;
     width: calc(100% - 20px);
     padding:10px;
-    box-shadow: 0px 0px 10px rgb(170, 170, 170);
-    -webkit-box-shadow: 0px 0px 10px rgb(170, 170, 170);
-    color: $bgcolor;
+    box-shadow: 0px 0px 10px #000;
+    color: $color;
     
 }

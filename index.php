@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Mark Three Template</title>
+    <title>Technovation 2k14</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Stylesheets-->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
