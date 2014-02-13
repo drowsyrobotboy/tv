@@ -10,8 +10,12 @@
     <script src="js/jquery-1.11.0.min.js" type="application/javascript"></script>
     <script src="js/angular.min.js" type="application/javascript"></script>
     <script src="js/angular-route.min.js" type="application/javascript"></script>
+    <script src="js/angular-animate.min.js" type="application/javascript"></script>
 </head>
 <body ng-controller="ctrl">
+    <!-- Preloaders -->
+    <div class="preloader-left"></div>
+    <div class="preloader-right"></div>
     <!--Top Nav Bar-->
     <div class="top">
         <ul>
@@ -19,7 +23,7 @@
         </ul>
     </div>
     <br /><br />
-    <div ng-view>Loading...</div>
+    <div ng-view class="view-animate">Loading...</div>
     
    
 

@@ -1,4 +1,4 @@
-var app = angular.module('app',['ngRoute']);
+var app = angular.module('app',['ngRoute','ngAnimate']);
 app.controller('ctrl', function($scope){
     $scope.menu = [
         {name:'Home', ref: '#/home'},
@@ -32,4 +32,10 @@ app.config(function($routeProvider){
                   templateUrl: 'pages/sponsors.html'
               })
         .otherwise({ redirectTo: '/home' });
+});
+$(document).ready(function(){
+    setTimeout(function(){
+    $('.preloader-left').css({'left':'-100%'});
+    $('.preloader-right').css({'right':'-100%'});
+    }, 1000);
 });

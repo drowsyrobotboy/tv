@@ -449,6 +449,7 @@ body
     font-family: $regular;
     background: $bgcolor url(../images/bg.gif);
     color: $color;
+    overflow-x:hidden;
 }
 
 .top
@@ -503,4 +504,61 @@ body
     top:80px;
     background: $bgcolor;
     box-shadow: 0 0 10px #222;
+}
+
+.view-animate.ng-enter, .view-animate.ng-leave {
+display:block;
+width:100%;
+position:absolute;
+top:36px;
+left:-10px;
+right:0;
+bottom:0;
+padding:10px;
+}
+ 
+.view-animate.ng-enter {
+-webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+top:-100%;
+left:-10px;
+opacity:1;
+}
+.view-animate.ng-leave {
+-webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+}
+.view-animate.ng-enter.ng-enter-active {
+top:36px;
+left:-10px;
+}
+.view-animate.ng-leave.ng-leave-active {
+top:-100%;
+opacity:0;
+left:-10px;
+}
+
+.preloader-left
+{
+    position:fixed;
+    top:0;
+    left:0;
+    min-width:50%;
+    min-height:100%;
+    background: #222;
+    z-index:4000;
+    transition: 2.5s all ease-in-out;
+    box-shadow: 0px 0px 10px #000;
+}
+.preloader-right
+{
+    position:fixed;
+    top:0;
+    right:0;
+    min-width:50%;
+    min-height:100%;
+    background: #222;
+    z-index:4000;
+    transition: 2.5s all ease-in-out;
+    box-shadow: 0px 0px 10px #000;
 }
