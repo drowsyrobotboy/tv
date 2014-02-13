@@ -527,6 +527,7 @@ opacity:1;
 .view-animate.ng-leave {
 -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
 transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+left:-10px;
 }
 .view-animate.ng-enter.ng-enter-active {
 top:36px;
@@ -538,7 +539,7 @@ opacity:0;
 left:-10px;
 }
 
-.preloader-left
+.door-left
 {
     position:fixed;
     top:0;
@@ -548,9 +549,9 @@ left:-10px;
     background: #222;
     z-index:4000;
     transition: 2.5s all ease-in-out;
-    box-shadow: 0px 0px 10px #000;
+    
 }
-.preloader-right
+.door-right
 {
     position:fixed;
     top:0;
@@ -560,5 +561,27 @@ left:-10px;
     background: #222;
     z-index:4000;
     transition: 2.5s all ease-in-out;
-    box-shadow: 0px 0px 10px #000;
+    
+}
+#tsharp
+{
+    width:180px;
+    z-index:4001;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-117px;
+    margin-top:-80px;
+    transition: 1.8s all ease-in-out;
+}
+#vsharp
+{
+    width:140px;
+    z-index:4001;
+    position:absolute;
+    top:50%;
+    right:50%;
+    margin-right:-100px;
+    margin-top:-75px;
+    transition: 1.8s all ease-in-out;
 }

@@ -35,7 +35,15 @@ app.config(function($routeProvider){
 });
 $(document).ready(function(){
     setTimeout(function(){
-    $('.preloader-left').css({'left':'-100%'});
-    $('.preloader-right').css({'right':'-100%'});
-    }, 1000);
+    $('#tsharp').css({'margin-left':'-150px','margin-top':'-150px'});
+    $('#vsharp').css({'margin-right':'-150px','margin-bottom':'-150px'});
+    }, 0001);
+    setTimeout(function(){
+   $('#tsharp').css({'left':'-100%','top':'-100%'});
+    $('#vsharp').css({'right':'-100%','bottom':'-100%'});
+    }, 2040);
+    setTimeout(function(){
+    $('.door-left').css({'left':'-100%'});
+    $('.door-right').css({'right':'-100%'});
+    }, 2050);
 });
