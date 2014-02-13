@@ -450,6 +450,7 @@ body
     background: $bgcolor url(../images/bg.gif);
     color: $color;
     overflow-x:hidden;
+    
 }
 
 .top
@@ -505,7 +506,6 @@ body
     background: $bgcolor;
     box-shadow: 0 0 10px #222;
 }
-
 .view-animate.ng-enter, .view-animate.ng-leave {
 display:block;
 width:100%;
@@ -549,7 +549,7 @@ left:-10px;
     background: #222;
     z-index:4000;
     transition: 2.5s all ease-in-out;
-    
+   
 }
 .door-right
 {

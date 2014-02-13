@@ -4,6 +4,7 @@ app.controller('ctrl', function($scope){
         {name:'Home', ref: '#/home'},
         {name:'About', ref: '#/about'},
         {name:'Events', ref: '#/events'},
+        {name:'Campus Ambassador', ref: '#/cba'},
         {name:'Contact', ref: '#/contact'},
         {name:'Sponsors', ref: '#/sponsors'}
     ];
@@ -23,6 +24,10 @@ app.config(function($routeProvider){
               {
                   templateUrl: 'pages/events.html'
               })
+        .when('/cba',
+              {
+                  templateUrl: 'pages/cba.html'
+              })
         .when('/contact',
               {
                   templateUrl: 'pages/contact.html'
@@ -34,6 +39,7 @@ app.config(function($routeProvider){
         .otherwise({ redirectTo: '/home' });
 });
 $(document).ready(function(){
+    $('body').css({"overflow-y":"hidden"});
     setTimeout(function(){
     $('#tsharp').css({'margin-left':'-150px','margin-top':'-150px'});
     $('#vsharp').css({'margin-right':'-150px','margin-bottom':'-150px'});
@@ -41,9 +47,15 @@ $(document).ready(function(){
     setTimeout(function(){
    $('#tsharp').css({'left':'-100%','top':'-100%'});
     $('#vsharp').css({'right':'-100%','bottom':'-100%'});
+        $('#tsharp').fadeOut(1000);
+        $('#vsharp').fadeOut(1000);
     }, 2600);
     setTimeout(function(){
     $('.door-left').css({'left':'-100%'});
     $('.door-right').css({'right':'-100%'});
     }, 2700);
+    setTimeout(function(){
+    $('body').css({"overflow-y":"auto"});
+    }, 3700);
+    
 });
