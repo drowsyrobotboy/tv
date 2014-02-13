@@ -1,18 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app='app'>
 <head>
     <title>Technovation 2k14</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Stylesheets-->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="fonts/sans.css" rel="stylesheet" type="text/css" />
+     <!--Resources Scripts-->
+    <script src="js/jquery-1.11.0.min.js" type="application/javascript"></script>
+    <script src="js/angular.min.js" type="application/javascript"></script>
+    <script src="js/angular-route.min.js" type="application/javascript"></script>
 </head>
-<body>
+<body ng-controller="ctrl">
     <!--Top Nav Bar-->
-    <div class="top">Header comes here</div>
+    <div class="top">
+        <ul>
+            <li ng-repeat="item in menu"><a href="{{ item.ref }}" >{{ item.name }}</a></li>
+        </ul>
+    </div>
+    <br /><br />
+    <div ng-view>Loading...</div>
+    
+   
+
     <!--User Scripts-->
-    <script src="js/script.js" type="application/javascript"></script>
-    <!--Resources Scripts-->
-    <script src="js/lib.js" type="application/javascript"></script>
+    <script src="js/script.u.js" type="application/javascript"></script>
 </body>
 </html>

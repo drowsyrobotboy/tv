@@ -1,1 +1,1 @@
-;
+var app=angular.module("app",["ngRoute","ngAnimate"]);app.controller("ctrl",function(e){e.menu=[{name:"Home",ref:"pages/home.html"},{name:"About",ref:"pages/about.html"},{name:"Events",ref:"pages/events.html"},{name:"Contact",ref:"pages/contact.html"}]});

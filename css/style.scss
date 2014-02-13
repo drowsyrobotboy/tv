@@ -417,6 +417,8 @@ table {
 
 $bgcolor: #333;
 $color: #eee;
+$lcolor: #E82525;
+$hcolor: #C41F1F;
 $regular: 'OpenSansRegular', sans-serif;
 $italic: 'OpenSansItalic', sans-serif;
 $light: 'OpenSansLight', sans-serif;
@@ -430,6 +432,17 @@ $eitalic: 'OpenSansExtraboldItalic', sans-serif;
 $vermin: 'vermin_vibes_2_blackregular', sans-serif;
 
 //Start CSS
+
+a
+{
+    color: $lcolor;
+    outline: 0;
+    text-decoration:none;
+}
+a:hover
+{
+    color: $hcolor;
+}
 
 body
 {
@@ -445,8 +458,49 @@ body
     position:fixed;
     top:0;
     width: calc(100% - 20px);
-    padding:10px;
+    padding: 0px 10px 15px 10px ;
     box-shadow: 0px 0px 10px #000;
     color: $color;
+    z-index:3000;
+}
+.top ul
+{
+    list-style:none;
+    margin-left:-40px;
+}
+.top ul li
+{
+    float:left;
+    display:block;
     
+    
+}
+.top ul li a
+{
+    outline: 0;
+    margin: 0px 10px;
+    text-decoration:none;
+    color: $color;
+}
+.top ul li a:hover
+{
+    color: $hcolor;
+}
+#logo-home
+{
+    width:800px;
+    position:relative;
+    top:150px;
+    margin:auto;
+}
+.container
+{
+    width:80%;
+    max-width:860px;
+    padding:10px 20px;
+    margin:auto;
+    position:relative;
+    top:80px;
+    background: $bgcolor;
+    box-shadow: 0 0 10px #222;
 }
