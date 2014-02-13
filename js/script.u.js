@@ -37,13 +37,13 @@ $(document).ready(function(){
     setTimeout(function(){
     $('#tsharp').css({'margin-left':'-150px','margin-top':'-150px'});
     $('#vsharp').css({'margin-right':'-150px','margin-bottom':'-150px'});
-    }, 0001);
+    }, 0801);
     setTimeout(function(){
    $('#tsharp').css({'left':'-100%','top':'-100%'});
     $('#vsharp').css({'right':'-100%','bottom':'-100%'});
-    }, 2040);
+    }, 2600);
     setTimeout(function(){
     $('.door-left').css({'left':'-100%'});
     $('.door-right').css({'right':'-100%'});
-    }, 2050);
+    }, 2700);
 });
