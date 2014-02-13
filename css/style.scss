@@ -427,6 +427,7 @@ $bold: 'OpenSansBold', sans-serif;
 $bitalic: 'OpenSansBoldItalic', sans-serif;
 $ebold: 'OpenSansExtrabold', sans-serif;
 $eitalic: 'OpenSansExtraboldItalic', sans-serif;
+$vermin: 'vermin_vibes_2_blackregular', sans-serif;
 
 //Start CSS
 
@@ -439,7 +440,7 @@ body
 
 .top
 {
-    font-family: $light;
+    font-family: $vermin;
     background: #222;
     position:fixed;
     top:0;
