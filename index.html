@@ -15,7 +15,7 @@
 <body ng-controller="ctrl">
     <!--Overlay-->
     <div class="overlay"></div>
-    <!-- Preloaders -->
+    <!-- Preloaders-->
     <div class="spinner">
       <div class="rect1"></div>
       <div class="rect2"></div>
@@ -29,13 +29,22 @@
     <!--Top Nav Bar-->
     <div class="top">
         <ul>
+            <li><a href="#/home">Home</a></li>
+            <li><a href="#/about">About</a></li>
+            <li style="cursor:pointer;"><a>Events</a>
+                <ul>
+                    <li ng-repeat="item in submenu"><a href="{{ item.ref }}" >{{ item.name }}</a></li>
+                </ul>
+            </li>
             <li ng-repeat="item in menu"><a href="{{ item.ref }}" >{{ item.name }}</a></li>
+            
         </ul>
     </div>
     <br /><br />
     <div ng-view class="view-animate">Loading...</div>
-    
-   
+    <div class="bottom">
+        &copy;2014 Mahatma Gandhi Institute of Technology | Designed by <a href="#">Robotboy</a>
+    </div>  
 
     <!--User Scripts-->
     <script src="js/script.u.js" type="application/javascript"></script>

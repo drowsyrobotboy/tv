@@ -1,12 +1,23 @@
 var app = angular.module('app',['ngRoute','ngAnimate']);
 app.controller('ctrl', function($scope){
     $scope.menu = [
-        {name:'Home', ref: '#/home'},
-        {name:'About', ref: '#/about'},
-        {name:'Events', ref: '#/events'},
         {name:'Campus Ambassador', ref: '#/cba'},
         {name:'Contact', ref: '#/contact'},
         {name:'Sponsors', ref: '#/sponsors'}
+    ];
+    $scope.submenu = [
+        {name:'Paper/Poster Presentation', ref: '#/ppt'},
+        {name:'Robotics Workshop', ref: '#/workshop'},
+        {name:'Pro Designer', ref: '#/prodesigner'},
+        {name:'The Illuminati', ref: '#/illuminati'},
+        {name:'Rover', ref: '#/rover'},
+        {name:'Follow Me', ref: '#/followme'},
+        {name:'Real Steel', ref: '#/realsteel'},
+        {name:'Robo Soccer', ref: '#/robosoccer'},
+        {name:'Robo Golf', ref: '#/robogolf'},
+        {name:'Robo Xtreme', ref: '#/roboxtreme'},
+        {name:'Robo Racer', ref: '#/roboracer'},
+        {name:'Mech Googled', ref: '#/googled'}
     ];
 });
 
@@ -20,10 +31,6 @@ app.config(function($routeProvider){
               {
                   templateUrl: 'pages/about.html'
               })
-        .when('/events',
-              {
-                  templateUrl: 'pages/events.html'
-              })
         .when('/cba',
               {
                   templateUrl: 'pages/cba.html'
@@ -36,6 +43,54 @@ app.config(function($routeProvider){
               {
                   templateUrl: 'pages/sponsors.html'
               })
+        .when('/followme',
+              {
+                  templateUrl: 'pages/events/followme.html'
+              })
+        .when('/googled',
+              {
+                  templateUrl: 'pages/events/googled.html'
+              })
+        .when('/illuminati',
+              {
+                  templateUrl: 'pages/events/illuminati.html'
+              })
+        .when('/ppt',
+              {
+                  templateUrl: 'pages/events/ppt.html'
+              })
+        .when('/prodesigner',
+              {
+                  templateUrl: 'pages/events/prodesigner.html'
+              })
+        .when('/realsteel',
+              {
+                  templateUrl: 'pages/events/realsteel.html'
+              })
+        .when('/robogolf',
+              {
+                  templateUrl: 'pages/events/robogolf.html'
+              })
+        .when('/roboracer',
+              {
+                  templateUrl: 'pages/events/roboracer.html'
+              })
+        .when('/robosoccer',
+              {
+                  templateUrl: 'pages/events/robosoccer.html'
+              })
+        .when('/roboxtreme',
+              {
+                  templateUrl: 'pages/events/roboxtreme.html'
+              })
+        .when('/rover',
+              {
+                  templateUrl: 'pages/events/rover.html'
+              })
+        .when('/workshop',
+              {
+                  templateUrl: 'pages/events/workshop.html'
+              })
         .otherwise({ redirectTo: '/home' });
 });
 
@@ -47,7 +102,7 @@ function preloadimages(){
     }
 }
 $(document).ready(function(){
-    preloadimages('images/bg.gif','images/overlay.png','images/logo-home.png','images/mgit.jpg','images/mct.png');
+    preloadimages('images/bg.gif','images/overlay.png','images/logo-home.png','images/mgit.jpg','images/mct.png','images/robosoccer.jpg','images/realsteel.jpg','images/realsteel-arena.jpg','images/roboxtreme.jpg','images/followme.jpg');
     $('.spinner').fadeOut("slow");
     $('body').css({"overflow-y":"hidden"});
     setTimeout(function(){

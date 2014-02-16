@@ -498,6 +498,26 @@ body
 {
     color: $hcolor;
 }
+.top ul li:hover > ul
+{
+    display:block;
+}
+.top ul li ul
+{
+    display:none;
+    position:absolute;
+    padding:10px;
+    background:#222;
+    box-shadow: 0px 0px 10px #000;
+    left:200px;
+    
+    
+}
+.top ul li ul li
+{
+    float:none;
+    margin: 0px 0px 10px 0px;
+}
 #logo-home
 {
     width:800px;
@@ -511,6 +531,7 @@ body
     max-width:860px;
     padding:10px 20px;
     margin:auto;
+    margin-bottom:-40px;
     position:relative;
     top:80px;
     background: $bgcolor;
@@ -521,36 +542,36 @@ body
     font-family: $vermin, sans-serif;
 }
 .view-animate.ng-enter, .view-animate.ng-leave {
-display:block;
-width:100%;
-position:absolute;
-top:36px;
-left:-10px;
-right:0;
-bottom:0;
-padding:10px;
+    display:block;
+    width:100%;
+    position:absolute;
+    top:36px;
+    left:-10px;
+    right:0;
+    bottom:0;
+    padding:10px;
 }
  
 .view-animate.ng-enter {
--webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
-top:-100%;
-left:-10px;
-opacity:1;
+    -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+    transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+    top:-100%;
+    left:-10px;
+    opacity:1;
 }
 .view-animate.ng-leave {
--webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
-left:-10px;
+    -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+    transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+    left:-10px;
 }
 .view-animate.ng-enter.ng-enter-active {
-top:36px;
-left:-10px;
+    top:36px;
+    left:-10px;
 }
 .view-animate.ng-leave.ng-leave-active {
-top:-100%;
-opacity:0;
-left:-10px;
+    top:-100%;
+    opacity:0;
+    left:-10px;
 }
 
 .door-left
@@ -658,4 +679,14 @@ left:-10px;
     transform: scaleY(1.0);
     -webkit-transform: scaleY(1.0);
   }
+}
+
+.bottom
+{
+    position:relative;
+    display:block;
+    top:125px;
+    text-align:center;
+    padding:20px;
+    font-size:12px;
 }
