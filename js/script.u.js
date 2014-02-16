@@ -38,7 +38,17 @@ app.config(function($routeProvider){
               })
         .otherwise({ redirectTo: '/home' });
 });
+
+var myimages=new Array()
+function preloadimages(){
+    for (i=0;i<preloadimages.arguments.length;i++){
+        myimages[i]=new Image();
+        myimages[i].src=preloadimages.arguments[i];
+    }
+}
 $(document).ready(function(){
+    preloadimages('images/bg.gif','images/overlay.png','images/logo-home.png','images/mgit.jpg','images/mct.png');
+    $('.spinner').fadeOut("slow");
     $('body').css({"overflow-y":"hidden"});
     setTimeout(function(){
     $('#tsharp').css({'margin-left':'-150px','margin-top':'-150px'});
