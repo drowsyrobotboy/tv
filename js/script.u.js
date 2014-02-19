@@ -7,9 +7,9 @@ app.controller('ctrl', function($scope){
     ];
     $scope.submenu = [
         {name:'Paper/Poster Presentation', ref: '#/ppt'},
-        {name:'Robotics Workshop', ref: '#/workshop'},
         {name:'Pro Designer', ref: '#/prodesigner'},
-        {name:'The Illuminati', ref: '#/illuminati'},
+        {name:'Auto Quotient', ref: '#/autoquotient'},
+		{name:'Illuminati', ref: '#/illuminati'},
         {name:'Rover', ref: '#/rover'},
         {name:'Follow Me', ref: '#/followme'},
         {name:'Real Steel', ref: '#/realsteel'},
@@ -51,7 +51,11 @@ app.config(function($routeProvider){
               {
                   templateUrl: 'pages/events/googled.html'
               })
-        .when('/illuminati',
+        .when('/autoquotient',
+              {
+                  templateUrl: 'pages/events/autoquotient.html'
+              })
+		.when('/illuminati',
               {
                   templateUrl: 'pages/events/illuminati.html'
               })
@@ -86,10 +90,6 @@ app.config(function($routeProvider){
         .when('/rover',
               {
                   templateUrl: 'pages/events/rover.html'
-              })
-        .when('/workshop',
-              {
-                  templateUrl: 'pages/events/workshop.html'
               })
         .otherwise({ redirectTo: '/home' });
 });
