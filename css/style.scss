@@ -541,6 +541,11 @@ body
 {
     font-family: $vermin, sans-serif;
 }
+.container h2
+{
+    font-family: $vermin, sans-serif;
+    margin-bottom: 5px;
+}
 .view-animate.ng-enter, .view-animate.ng-leave {
     display:block;
     width:100%;
