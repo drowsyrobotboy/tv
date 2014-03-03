@@ -17,7 +17,8 @@ app.controller('ctrl', function($scope){
         {name:'Robo Golf', ref: '#/robogolf'},
         {name:'Robo Xtreme', ref: '#/roboxtreme'},
         {name:'Robo Racer', ref: '#/roboracer'},
-        {name:'Mech Googled', ref: '#/googled'}
+        {name:'Mech Googled', ref: '#/googled'},
+        {name:'Workshop', ref: '#/workshop'}
     ];
 });
 
@@ -86,6 +87,10 @@ app.config(function($routeProvider){
         .when('/roboxtreme',
               {
                   templateUrl: 'pages/events/roboxtreme.html'
+              })
+        .when('/workshop',
+              {
+                  templateUrl: 'pages/events/workshop.html'
               })
         .when('/rover',
               {
