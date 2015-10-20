@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+<head>
+    <title>Technovation 2k14</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheets-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="fonts/sans.css" rel="stylesheet" type="text/css" />
+     <!--Resources Scripts-->
+    <script src="js/jquery-1.11.0.min.js" type="application/javascript"></script>
+    <script src="js/angular.min.js" type="application/javascript"></script>
+    <script src="js/angular-route.min.js" type="application/javascript"></script>
+    <script src="js/angular-animate.min.js" type="application/javascript"></script>
+</head>
+<body ng-controller="ctrl">
+    <!--Overlay-->
+    <div class="overlay"></div>
+    <!-- Preloaders-->
+    <div class="spinner">
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="rect3"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
+    </div>
+    <div id="tsharp"><img src="images/t.png" width="100%"/></div><div id="vsharp"><img src="images/v.png" width="100%"/></div>
+    <div class="door-left"></div>
+    <div class="door-right"></div>
+    <!--Top Nav Bar-->
+    <div class="top">
+        <ul>
+            <li><a href="#/home">Home</a></li>
+            <li><a href="#/about">About</a></li>
+            <li style="cursor:pointer;"><a>Events</a>
+                <ul>
+                    <li ng-repeat="item in submenu"><a href="{{ item.ref }}" >{{ item.name }}</a></li>
+                </ul>
+            </li>
+            <li ng-repeat="item in menu"><a href="{{ item.ref }}" >{{ item.name }}</a></li>
+            
+        </ul>
+    </div>
+    <br /><br />
+    <div ng-view class="view-animate">Loading...</div>
+    <div class="bottom">
+        &copy;2014 Mahatma Gandhi Institute of Technology | Designed by <a href="#">Robotboy</a>
+    </div>  
+
+    <!--User Scripts-->
+    <script src="js/script.u.js" type="application/javascript"></script>
+    <script type="text/javascript">
+
+        
+    </script>
+</body>
+</html>

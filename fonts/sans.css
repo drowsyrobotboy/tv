@@ -118,3 +118,14 @@
 
 }
 
+@font-face {
+    font-family: 'vermin_vibes_2_blackregular';
+    src: url('vermin_vibes_2_black-webfont.eot');
+    src: url('vermin_vibes_2_black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('vermin_vibes_2_black-webfont.woff') format('woff'),
+         url('vermin_vibes_2_black-webfont.ttf') format('truetype'),
+         url('vermin_vibes_2_black-webfont.svg#vermin_vibes_2_blackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
